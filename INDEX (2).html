@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f0e8; /* beige */
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            color: #6b7b2b; /* verde oliva */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 26px;
+        }
+
+        .contenido {
+            display: flex;
+            gap: 40px;
+            padding: 20px 40px;
+        }
+
+        /* Columna izquierda */
+        .col-izq {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bloque {
+            border: 2px solid #6b7b2b;
+            padding: 18px;
+            background-color: #fdfaf4;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bloque small {
+            font-weight: normal;
+            font-size: 13px;
+            display: block;
+            margin-top: 6px;
+        }
+
+        /* Columna derecha */
+        .col-der {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .col-der h2 {
+            margin-top: 20px;
+            color: #6b7b2b;
+            font-size: 20px;
+        }
+
+        .col-der h3 {
+            margin-bottom: 5px;
+            color: #6b7b2b;
+            font-size: 16px;
+        }
+
+        .col-der p, .col-der ul {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .datos-personales {
+            text-align: center;
+            margin: 30px 0;
+            color: #6b7b2b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media (max-width: 700px) {
+            .contenido {
+                flex-direction: column;
+            }
+            .col-izq {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Posicionamiento Web</h1>
+
+    <div class="contenido">
+        <!-- Columna izquierda -->
+        <div class="col-izq">
+            <div class="bloque">
+                SEO
+                <small>Search Engine Optimization</small>
+            </div>
+            <div class="bloque">
+                SEM
+                <small>Search Engine Marketing</small>
+            </div>
+            <div class="bloque">
+                Visibilidad en resultados
+                <small>Cómo te ve el usuario en Google</small>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-der">
+
+            <h2>SEO (Search Engine Optimization)</h2>
+            <p>
+                El SEO es la estrategia a largo plazo para que tu web suba puestos de forma orgánica (gratuita). 
+                Es como “tunear” tu sitio por dentro para que a Google le encante.
+            </p>
+
+            <h3>¿Cómo funciona?</h3>
+            <ul>
+                <li><strong>Palabras clave:</strong> usar los términos exactos que la gente escribe en el buscador.</li>
+                <li><strong>Contenido de valor:</strong> crear contenido útil, original y relevante.</li>
+                <li><strong>Velocidad y diseño:</strong> cargar rápido y verse bien en móvil.</li>
+                <li><strong>Enlaces:</strong> conseguir que otras webs te recomienden.</li>
+            </ul>
+            <p><strong>En resumen:</strong> es trabajo constante, pero te da tráfico de calidad gratis.</p>
+
+            <h2>SEM (Search Engine Marketing)</h2>
+            <p>
+                El SEM es la estrategia de pago para aparecer en los resultados de Google al instante.
+            </p>
+
+            <h3>¿Cómo funciona?</h3>
+            <ul>
+                <li><strong>Pujas (Bidding):</strong> pagas para aparecer en ciertas búsquedas.</li>
+                <li><strong>Google Ads:</strong> creas anuncios y defines tu inversión.</li>
+                <li><strong>Resultados rápidos:</strong> visibilidad inmediata.</li>
+            </ul>
+            <p><strong>En resumen:</strong> es un atajo rápido y efectivo, pero requiere presupuesto.</p>
+
+            <h2>Visibilidad en Resultados</h2>
+            <p>
+                Qué tan fácil es para un usuario encontrarte y hacer clic en tu enlace.
+            </p>
+
+            <h3>Elementos clave:</h3>
+            <ul>
+                <li><strong>Título (Title Tag):</strong> texto principal azul en Google.</li>
+                <li><strong>Descripción (Meta Description):</strong> pequeño texto debajo del título.</li>
+                <li><strong>Rich Snippets:</strong> elementos como estrellas, precios o fotos.</li>
+            </ul>
+
+            <p><strong>Consejo:</strong> SEO + SEM te llevan a la cima, pero la visibilidad hace que te elijan.</p>
+
+        </div>
+    </div>
+
+    <div class="datos-personales">Ana Paula Bastida Ramírez</div>
+
+</body>
+</html>
+
